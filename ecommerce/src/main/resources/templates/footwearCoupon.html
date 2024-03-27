@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{fragments/common_head :: common_header(~{::title},~{::link})}">
+  <title>Footwear Coupon</title>
+  <link rel="stylesheet" th:href="@{/coupon.css}">
+</head>
+
+<body style="background: aliceblue;">
+<div th:insert="~{fragments/navigation :: header}"></div>
+<div class="container">
+  <div class="dealsHead">Footwear Coupons</div>
+
+  <div class="container-fluid" style="margin-top:20px">
+    <div class="row">
+      <div class="col-12 mt-3">
+        <div class="card">
+          <div class="card-horizontal">
+            <div class="img-square-wrapper">
+              <img class="" th:src="@{images/sketchers-coupon.jpg}" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title"><b>20% Discount on Sketchers</b></h3>
+              <p class="card-text">Purchase this coupon in just Rs. 200 and get 20% off on all your favourite shoes.</p>
+              <p style="font-size:12px">Terms and Conditions:<br/> Your order must be above Rs. 1599/-.
+                <br/>Offer is only valid when purchased from their official website.</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">This deal will expire soon. Hurry up...</small>
+            <a href="#" class="btn btn-primary" style="margin-left:695px">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 mt-3">
+        <div class="card">
+          <div class="card-horizontal">
+            <div class="img-square-wrapper">
+              <img class="" th:src="@{images/puma-coupon.jpg}" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title"><b>Get Exclusive discount on Puma Footwear</b></h3>
+              <p class="card-text">Grab this coupon in just Rs. 250 and get exclusive deals on Puma footwear.
+                <br/>What are you waiting for! It's a time to buy happiness for yourself and for your loved ones.</p>
+              <p style="font-size:12px">Terms and Conditions:<br/> Flat 50% off on order above Rs. 799/- + 10% off on Paytm or PhonePe online payments.
+                <br/>Offer is only valid on the Puma website.</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">This deal is available for today only. Only few hours left...</small>
+            <a href="#" class="btn btn-primary" style="margin-left:570px">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 mt-3">
+        <div class="card">
+          <div class="card-horizontal">
+            <div class="img-square-wrapper">
+              <img class="" th:src="@{images/bata-coupon.jpg}" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title"><b>80% OFF</b></h3>
+              <p class="card-text">Yeah! You heard it right.
+                <br/>Grab this coupon and get 80% off on all BATA footwears.</p>
+              <p style="font-size:12px">Terms and Conditions:<br/> Order must be above Rs. 599/-.
+                <br/>Offer is only valid when purchased from their official website.</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">This deal will expire soon. Hurry up...</small>
+            <a href="#" class="btn btn-primary" style="margin-left:695px">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <br/>
+  </div>
+</div>
+<script type="text/javascript" th:src="@{/js/navigation.js}"></script>
+</body>
+</html>

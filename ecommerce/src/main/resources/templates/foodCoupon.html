@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{fragments/common_head :: common_header(~{::title},~{::link})}">
+    <title>Food Coupon</title>
+    <link rel="stylesheet" th:href="@{/coupon.css}">
+</head>
+
+<body style="background: aliceblue;">
+<div th:insert="~{fragments/navigation :: header}"></div>
+<div class="container">
+    <div class="dealsHead">Food Coupons</div>
+    <div>
+        <div class="center hideform">
+            <button id="close" style="float: right;">X</button>
+            <form action="/action_page.php">
+                First name:<br>
+                <input type="text" name="firstname" value="Mickey">
+                <br>
+                Last name:<br>
+                <input type="text" name="lastname" value="Mouse">
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <a id="show" class="btn btn-success" style="margin-left: 935px; margin-bottom: -11px;">Add New Coupon</a>
+    </div>
+    <div class="container-fluid" style="margin-top:20px">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="" th:src="@{images/starbucks-coupon-bogo50.jpg}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><b>50% Discount on STARBUCKs</b></h3>
+                            <p class="card-text">Purchase this coupon in just Rs. 100 and get 50% off on all order of StarBucks above Rs.499.</p>
+                            <p style="font-size:12px">Terms and Conditions:<br/> Your order must be above Rs. 499/-.
+                                <br/>Offer is only valid on the Starbucks website.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">This deal will expire soon. Hurry up...</small>
+                        <a href="#" class="btn btn-primary" style="margin-left:695px">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="" th:src="@{images/pizza-hut-coupon.jpg}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><b>Pizza Hut Deal</b></h3>
+                            <p class="card-text">Grab this coupon in just Rs. 150 and enjoy fun for next one month.
+                                <br/>Fill this month with cheese and yummy different type of Pizza's.</p>
+                            <p style="font-size:12px">Terms and Conditions:<br/> Your order must be above Rs. 299/-.
+                                <br/>Offer is only valid on the pizzahut website.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">This deal is available for today only. Only few hours left...</small>
+                        <a href="#" class="btn btn-primary" style="margin-left:570px">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="" th:src="@{images/burgerking-coupon.jpg}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><b>All items under Rs. 129</b></h3>
+                            <p class="card-text">Grab this coupon in just Rs. 100 and get exclusive deals on Burger King orders.
+                                <br/>What are you waiting for! It's a time to give some relief to your hunger.</p>
+                            <p style="font-size:12px">Terms and Conditions:<br/> Order must be above Rs. 150/-.
+                                <br/>Offer is only valid on the Burger King website.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">This deal will expire soon. Hurry up...</small>
+                        <a href="#" class="btn btn-primary" style="margin-left:695px">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+    </div>
+</div>
+<script type="text/javascript" th:src="@{/js/navigation.js}"></script>
+<script>
+    $('#show').on('click', function () {
+    $('.center').show();
+    $(this).hide();
+})
+
+$('#close').on('click', function () {
+    $('.center').hide();
+    $('#show').show();
+})
+</script>
+</body>
+</html>

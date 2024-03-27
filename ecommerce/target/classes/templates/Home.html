@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="~{fragments/common_head :: common_header(~{::title},~{::link})}">
+    <title>Welcome to our CouponStore</title>
+    <link rel="stylesheet" th:href="@{/home.css}">
+</head>
+
+<body style="background: aliceblue;">
+
+<div th:insert="~{fragments/navigation :: header}"></div>
+
+<div class="main">
+    <div class="container foodSample">
+        <div class="container-expand pl-5 text-black food-container">
+            <div>Food</div>
+            <div style="margin-left:83%" ><a href="file:///C:/Users/2085310/Project/ecommerce/src/main/resources/templates/foodcoupon.html">View All <i class="fa fa-chevron-circle-right"></i></a></div>
+        </div>
+        <div class="container-expand pl-5 foodsamplecoupon" style="display: flex;">
+            <div class="card foodsamplecoup">
+                <img class="card-img-top" th:src="@{/images/starbucks-coupon-bogo50.jpg}" alt="Card image" style="width:100%; height:275px;">
+                <div class="card-body">
+                    <h4 class="card-title"><b>50% Discount on STARBUCKS</b></h4>
+                    <p class="card-text">Purchase this coupon in just Rs. 100 and get 50% off on all order of StarBucks above Rs.499.
+                        <br/><small>Terms & Conditions applied.</small></p>
+                    <a href="#" class="btn btn-primary mb-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="card foodsamplecoup">
+                <img class="card-img-top" th:src="@{/images/pizza-hut-coupon.jpg}" alt="Card image" style="width:100%; height:275px;">
+                <div class="card-body">
+                    <h4 class="card-title"><b>Pizza Hut Deal</b></h4>
+                    <p class="card-text">Grab this coupon in just Rs. 150 and enjoy fun for next one month.
+                        <br/><small>Terms & Conditions applied.</small></p>
+                    <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="card foodsamplecoup">
+                <img class="card-img-top" th:src="@{images/burgerking-coupon.jpg}" alt="Card image" style="width:100%; height:275px;">
+                <div class="card-body">
+                    <h4 class="card-title"><b>All items under Rs. 129</b></h4>
+                    <p class="card-text">Grab this coupon in just Rs. 100 and get exclusive deals on Burger King orders.
+                        <br/><small>Terms & Conditions applied.</small></p>
+                    <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <div class="container electronicsSample">
+        <div class="container-expand pl-5 text-black electronics-container">
+            <div>Electronics</div>
+            <div style="margin-left:73.5%"><a href="file:///C:/Users/2085310/Project/ecommerce/src/main/resources/templates/electronicscoupon.html">View All <i class="fa fa-chevron-circle-right"></i></a></div>
+        </div>
+        <div class="container-expand pl-5 electronicssamplecoupon" style="display: flex;">
+            <div class="card electronicssamplecoup">
+                <img class="card-img-top" th:src="@{/images/boat-coupons.jpg}" alt="Card image" style="width:100%; height:275px;">
+                <div class="card-body">
+                    <h4 class="card-title"><b>15% off on all products</b></h4>
+                    <p class="card-text">Grab this coupon in just Rs.100 and unlock the world of digitalization.
+                        <br/><small>Terms & Conditions applied.</small></p>
+                    <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="card electronicssamplecoup">
+                <img class="card-img-top" th:src="@{/images/mobile-coupons.jpg}" alt="Card image" style="width:100%; height:275px;">
+                <div class="card-body">
+                    <h4 class="card-title"><b>70% off on latest Mobiles</b></h4>
+                    <p class="card-text">Get 70% off on all mobile phones.
+                        <br/><small>Terms & Conditions applied.</small></p>
+                    <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="card electronicssamplecoup">
+                <img class="card-img-top" th:src="@{/images/titan-coupons.jpg}" alt="Card image" style="width:100%; height:275px;">
+                <div class="card-body">
+                    <h4 class="card-title"><b>Upto 60% off on all Titan watches</b></h4>
+                    <p class="card-text">Grab this coupon in just Rs.200 and buy all your favourite watches and get upto 60% off.
+                        <br/><small>Terms & Conditions applied.</small></p>
+                    <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <div class="container footwearSample">
+        <div class="container-expand pl-5 text-black footwear-container">
+            <div>Footwear</div>
+            <div style="margin-left:76%" ><a href="file:///C:/Users/2085310/Project/ecommerce/src/main/resources/templates/footwear.html">View All <i class="fa fa-chevron-circle-right"></i></a></div>
+        </div>
+        <div class="container-expand pl-5 footwearsamplecoupon" style="display: flex;">
+            <div class="card footwearsamplecoup">
+                <img class="card-img-top" th:src="@{/images/bata-coupon.jpg}" alt="Card image" style="width:100%; height:275px;">
+                <div class="card-body">
+                    <h4 class="card-title"><b>20% Discount on Sketchers</b></h4>
+                    <p class="card-text">Purchase this coupon in just Rs. 200 and get 20% off on all your favourite shoes.
+                        <br/><small>Terms & Conditions applied.</small></p>
+                    <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="card footwearsamplecoup">
+                <img class="card-img-top" th:src="@{/images/puma-coupon.jpg}" alt="Card image" style="width:100%; height:275px;">
+                <div class="card-body">
+                    <h4 class="card-title"><b>Get Exclusive discount on Puma Footwear</b></h4>
+                    <p class="card-text">Grab this coupon in just Rs. 250 and get exclusive deals on Puma footwear.
+                        <br/><small>Terms & Conditions applied.</small></p>
+                    <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="card footwearsamplecoup">
+                <img class="card-img-top" th:src="@{/images/sketchers-coupon.jpg}" alt="Card image" style="width:100%; height:275px;">
+                <div class="card-body">
+                    <h4 class="card-title"><b>80% OFF</b></h4>
+                    <p class="card-text">Grab this coupon and get 80% off on all BATA footwears.
+                       <br/><small>Terms & Conditions applied.</small></p>
+                    <a href="#" class="btn btn-primary mt-4">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+</div>
+<script type="text/javascript" th:src="@{/js/navigation.js}"></script>
+</div>
+
+</body>
+</html>

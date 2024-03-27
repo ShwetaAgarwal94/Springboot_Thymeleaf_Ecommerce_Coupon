@@ -1,0 +1,26 @@
+.loginPage {
+    width: 400px;
+    margin: 80px 200px 117px 375px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: aliceblue!important;
+    background-clip: padding-box!important;
+    border: 2px solid rgba(0,0,0,0.150)!important;
+    border-radius: 0.5rem!important;
+}
+
+.loginPage a {
+    color: blue;
+    text-decoration: underline;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #bde0ff, #d7ecff , #f0f8ff);
+}
+
+.errors {
+    font-size: 14px;
+    margin-top: 5px;
+    color: darkred;
+    font-family: monospace;
+}

@@ -1,0 +1,110 @@
+.imgStyle {
+     margin-left:500px;
+     margin-top: 15px;
+}
+
+.imgStyle img{
+     width:120px;
+}
+
+.dealsHead {
+    margin-left: 258px;
+    font-size: 70px;
+    margin-top:5px;
+    text-shadow: 3px 1px darkgrey;
+    -webkit-text-stroke: thin;
+}
+
+.card-horizontal {
+    font-size: 16px;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.img-square-wrapper img {
+    width: 250px;
+    height: 220px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.nav-top-name {
+     margin-left: 20px;
+}
+
+.search-box-nav{
+     margin-left: 20px;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  color: white;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 20px;}
+}
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="~{fragments/common_head :: common_header(~{::title},~{::link})}">
+    <title>Electronics Coupon</title>
+    <link rel="stylesheet" th:href="@{/coupon.css}">
+</head>
+
+<body style="background: aliceblue;">
+
+<div th:insert="~{fragments/navigation :: header}"></div>
+
+<div class="container">
+    <div class="dealsHead" style="margin-left:250px">Electroninc Coupons</div>
+
+    <div class="container-fluid" style="margin-top:20px">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="" th:src="@{images/boat-coupons.jpg}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><b>15% off on all products</b></h3>
+                            <p class="card-text">To all gadget lovers, here is the chance to full your bag with awesome and latest gadgets.
+                            <br/>Grab this coupon in just Rs.100 and unlock the world of digitalization.</p>
+                            <p style="font-size:12px">Terms and Conditions:<br/> Your order must be above Rs. 599/-.
+                                <br/>Offer is only valid on the boat website.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">This deal will expire soon. Hurry up...</small>
+                        <a href="#" class="btn btn-primary" style="margin-left:695px">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="" th:src="@{images/mobile-coupons.jpg}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><b>70% off on latest Mobiles</b></h3>
+                            <p class="card-text">Feeling annoyed from your mobile phone and want to change it?
+                                <br/>Then this deal is best for you. Get 70% off on all mobile phones.</p>
+                            <p style="font-size:12px">Terms and Conditions:<br/> You can purchase mobile from Vivo, Realme, Oppo and OnePlus brands.
+                                <br/>Offer is only valid when purchased from their official website.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">This deal will expire soon. Hurry up...</small>
+                        <a href="#" class="btn btn-primary" style="margin-left:695px">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="" th:src="@{images/titan-coupons.jpg}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><b>Upto 60% off on all Titan watches</b></h3>
+                            <p class="card-text">Are you a watch lover and want to buy some trendy watches?
+                                <br/>Then this deal is for you. Grab this coupon in just Rs. 200.</p>
+                            <p style="font-size:12px">Terms and Conditions:<br/> Order must be above Rs. 500/-.
+                                <br/>Offer is only valid when purchased from their official website.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">This deal will expire soon. Hurry up...</small>
+                        <a href="#" class="btn btn-primary" style="margin-left:695px">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+    </div>
+</div>
+<script type="text/javascript" th:src="@{/js/navigation.js}"></script>
+</body>
+</html>
